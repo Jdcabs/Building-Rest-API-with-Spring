@@ -9,9 +9,9 @@
   - [x] _Adding Spring Validation._
 
 - __Future Development.__
-  - [ ] _Try Some Relationship with Different Entities._
-  - [ ] _Adding Spring Security._
-  - [ ] _Adding Spring Actuator._
+  - [ ] _Implement Some Relationships with Different Entities._
+  - [ ] _Implement Spring Security._
+  - [ ] _Implement Spring Actuator._
   - [ ] _Creating Front End._
 
 

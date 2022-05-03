@@ -1,8 +1,10 @@
 package com.spring.demo.Services;
 
-import com.spring.demo.Controller.StudentController;
 import com.spring.demo.Model.Students;
 import com.spring.demo.Repository.StudentRepository;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,10 +21,15 @@ public class StudentServiceImpl {
         repository = studentRepository;
     }
 
+    public List<Students> findAllPageable(Integer pageNumber, Integer pageSize) {
+        Pageable pageable = PageRequest.of(pageNumber,pageSize);
+        pageable.getSort().ascending();
+        return repository.findAll(pageable).getContent();
+    }
+
     public List<Students> findAll() {
         return repository.findAll();
     }
-
     public Students createStudent(Students students) {
         return repository.save(students);
     }
