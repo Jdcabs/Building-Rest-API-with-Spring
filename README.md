@@ -16,4 +16,4 @@
 
 
 
-![Spring Logo](assets/spring-framework-project-logo.webp)
+![](assets/spring-framework-project-logo.webp)
