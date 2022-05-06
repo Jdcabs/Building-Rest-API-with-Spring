@@ -12,6 +12,8 @@ import java.util.List;
 @RequestMapping("/students")
 public class StudentController {
 
+    // We Created some basic CRUD Operation with Spring Data Jpa.
+
     private final StudentServiceImpl service;
 
     // Constructor.
